@@ -14,3 +14,30 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+
+  $('.logo').hover(function(){
+    $('.jumbotron-header').fadeIn();
+  }, function(){
+    $('.jumbotron-header').fadeOut();
+  });
+
+  $("#button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 400);
+  });
+
+  $(window).bind('scroll', function () {
+    if ($(window).scrollTop() > $('.main-header').height() + 650) {
+        $('#main-header').addClass('col-8 col-offset-2');
+        $('.main-header').css('position', 'fixed');
+        $('.main-header').hide().fadeIn(200);
+    } else {
+        $('#main-header').removeClass('col-8 col-offset-2');
+        $('.main-header').css('position', 'absolute');
+    }
+  });
+
+});
