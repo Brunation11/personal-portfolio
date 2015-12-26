@@ -22,6 +22,6 @@ module PersonalWebsite
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-    config.assets.version = '1.0'
+    config.assets.version = '1.1'
   end
 end
