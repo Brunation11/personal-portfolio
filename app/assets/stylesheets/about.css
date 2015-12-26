@@ -1,0 +1,13 @@
+.quote-banner {
+  font-weight: 100;
+  font-size: 1.55rem;
+  line-height: 150%;
+}
+
+.about-container {
+  border-top: 1px solid #232323;
+}
+
+.about-banner {
+  width: 100%;
+}

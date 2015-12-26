@@ -1,0 +1,71 @@
+/********************
+default
+********************/
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+
+.no-list-style {
+  list-style: none;
+  padding: 0;
+}
+
+.inline {
+  display: inline;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+.logo {
+  width: 50%;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.button {
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding-top: 0;
+}

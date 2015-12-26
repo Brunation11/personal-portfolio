@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PersonalWebsite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>PersonalPortfolio</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="row">
+      <div class="main-header col-12 center">
+        <div id="main-header">
+        <nav class="col-2 col-offset-3">
+          <ul class="no-list-style">
+            <li><%= link_to "Projects", root_path, class: "link col-6" %></li>
+            <li><%= link_to "Blog", root_path, class: "link col-6" %></li>
+          </ul>
+        </nav>
 
-<%= yield %>
+        <div class="col-2">
+          <div class="col-6 col-offset-3">
+          <%= link_to (image_tag "full-size-logo-black.png", id: "logo",class: "logo"), root_path %>
+          </div>
+        </div>
 
-</body>
+        <nav class="col-2">
+          <ul class="no-list-style">
+            <li><%= link_to "About", "#about", id: "button", class: "link col-6" %></li>
+            <li><%= link_to "Contact", root_path, class: "link col-6" %></li>
+          </ul>
+        </nav>
+        </div>
+      </div>
+    </div>
+      <%= yield %>
+  </body>
 </html>

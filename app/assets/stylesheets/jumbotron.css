@@ -1,0 +1,25 @@
+.jumbotron-header-margin-top {
+  /*margin-top: .75rem;*/
+}
+
+.jumbotron-header-name {
+  font-weight: 100;
+  color: #fff;
+}
+
+.jumbotron-header {
+  font-size: 1.75rem;
+  font-weight: 100;
+  color: #fff;
+}
+
+.jumbotron-container {
+  background-image: url("/assets/jumbotron.gif");
+  background-size: auto 100%;
+  height: 87vh;
+  opacity: .9;
+}
+
+.jumbotron-header-div {
+  margin-top: 14.75rem;
+}
