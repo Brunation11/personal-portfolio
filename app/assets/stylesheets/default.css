@@ -62,6 +62,10 @@ default
   visibility: hidden;
 }
 
+.static-width {
+  width: 1200px;
+}
+
 .button {
   background: none;
   border: 1px solid #000;
