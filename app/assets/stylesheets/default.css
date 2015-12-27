@@ -63,7 +63,8 @@ default
 }
 
 .static-width {
-  width: 1200px;
+  max-width: 1500px;
+  text-align: center;
 }
 
 .button {
