@@ -13,7 +13,7 @@
         <nav class="col-2 col-offset-3">
           <ul class="no-list-style">
             <li><%= link_to "Projects", root_path, class: "link col-6" %></li>
-            <li><%= link_to "Blog", root_path, class: "link col-6" %></li>
+            <li><%= link_to "Blog", posts_path, class: "link col-6" %></li>
           </ul>
         </nav>
 
@@ -25,13 +25,19 @@
 
         <nav class="col-2">
           <ul class="no-list-style">
-            <li><%= link_to "About", "#about", id: "button", class: "link col-6" %></li>
-            <li><%= link_to "Contact", root_path, class: "link col-6" %></li>
+            <li><%= link_to "About", root_path(anchor: "about"), id: "about-button", class: "link col-6" %></li>
+            <li><%= link_to "Contact", root_path(anchor: "contact"), id: "contact-button", class: "link col-6" %></li>
           </ul>
         </nav>
         </div>
       </div>
     </div>
       <%= yield %>
+
+    <% if logged_in? %>
+      <div class="col-12 center">
+        <%= link_to 'logout', logout_path, method: "delete" %>
+      </div>
+    <% end %>
   </body>
 </html>

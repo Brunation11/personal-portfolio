@@ -1,0 +1,23 @@
+<div class="post-preview-container col-8 col-offset-2">
+
+  <div class="post-date center col-1">
+    <p class="no-padding no-margin"><%= post.created_at.strftime("%b %Y") %></p>
+    <p class="post-date-day no-padding no-margin"><%= post.created_at.strftime("%d") %></p>
+  </div>
+
+  <div class="post-preview col-11">
+    <h1 class="post-title no-padding no-margin"><%= post.title %></h1>
+    <h2 class="post-subtitle no-padding no-margin"><%= post.subtitle %></h2>
+
+    <ul class="no-list-style no-padding no-margin">
+      <% post.tags.each do |tag| %>
+        <li class="post-tags no-padding no-margin inline"><%= tag %></li>
+      <% end %>
+    </ul>
+
+    <p><%= post.formatted_body[0] %></p>
+
+    <p class="center"><%= link_to 'Continue Reading', post_path(post), class: "link button" %></p>
+  </div>
+
+</div>

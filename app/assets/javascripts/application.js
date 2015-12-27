@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require froala_editor.min.js
 //= require_tree .
 
 $(document).ready(function(){
@@ -23,10 +24,16 @@ $(document).ready(function(){
     $('.jumbotron-header').fadeOut();
   });
 
-  $("#button").click(function() {
+  $("#about-button").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top
-    }, 400);
+    }, 600);
+  });
+
+  $("#contact-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 600);
   });
 
   $(window).bind('scroll', function () {
@@ -40,4 +47,16 @@ $(document).ready(function(){
     }
   });
 
+  $('#new-post').on('click', function(event) {
+    event.preventDefault();
+    $.ajax({
+      method: 'GET',
+      url: $(this).attr('ajax_path')
+    }).done(function(response) {
+      $('#post-index').append(response);
+    }).fail(function(response) {
+      console.log("There was an eror" + response);
+    });
+  });
 });
+

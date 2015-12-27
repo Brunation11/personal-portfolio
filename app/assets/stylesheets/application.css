@@ -41,13 +41,23 @@ html, body {
 
 
 .main-content {
-  margin-top: 6rem;
+  margin-top: 6.5rem;
 }
 
 .main-header {
   padding: 1rem 0;
   background: #fff;
   position: absolute;
+}
+
+.form-field {
+  width: 100%;
+  height: 2rem;
+}
+
+.form-body-field {
+  width: 100%;
+  height: 25rem;
 }
 
 /********************
