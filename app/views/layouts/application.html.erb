@@ -12,21 +12,21 @@
         <div id="main-header">
         <nav class="col-2 col-offset-3">
           <ul class="no-list-style">
-            <li><%= link_to "Projects", root_path, class: "link col-6" %></li>
-            <li><%= link_to "Blog", posts_path, class: "link col-6" %></li>
+            <li class= "nav-tab link"><%= link_to "Projects", root_path, class: "link col-6 nav-tab" %></li>
+            <li class= "nav-tab link"><%= link_to "Blog", posts_path, class: "link col-6 nav-tab" %></li>
           </ul>
         </nav>
 
         <div class="col-2">
-          <div class="col-6 col-offset-3">
+          <div class="col-4 col-offset-4">
           <%= link_to (image_tag "full-size-logo-black.png", id: "logo",class: "logo"), root_path %>
           </div>
         </div>
 
         <nav class="col-2">
           <ul class="no-list-style">
-            <li><%= link_to "About", root_path(anchor: "about"), id: "about-button", class: "link col-6" %></li>
-            <li><%= link_to "Contact", root_path(anchor: "contact"), id: "contact-button", class: "link col-6" %></li>
+            <li class="nav-tab link"><%= link_to "About", root_path(anchor: "about"), id: "about-button", class: "link col-6 nav-tab" %></li>
+            <li class="nav-tab link"><%= link_to "Contact", root_path(anchor: "contact"), id: "contact-button", class: "link col-6 nav-tab" %></li>
           </ul>
         </nav>
         </div>

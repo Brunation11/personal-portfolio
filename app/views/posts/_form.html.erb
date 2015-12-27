@@ -1,9 +1,9 @@
 <%= form_for @post do |f| %>
 
   <% if @post.errors.any? %>
-    <h2><%= pluralize(@post.errors.count, 'error') %> prohibited this post from being saved:
+    <h2 class="center"><%= pluralize(@post.errors.count, 'error') %> prohibited this post from being saved:
     </h2>
-    <ul class="no-list-style">
+    <ul class="center no-list-style">
       <% @post.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>

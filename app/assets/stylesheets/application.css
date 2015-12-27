@@ -39,15 +39,20 @@ html, body {
   font-weight: 300;
 }
 
-
-.main-content {
-  margin-top: 6.5rem;
-}
-
 .main-header {
   padding: 1rem 0;
   background: #fff;
-  position: absolute;
+}
+
+.nav-tab {
+  background: #000;
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.main-content {
+  margin-top: 1rem;
 }
 
 .form-field {
@@ -58,6 +63,7 @@ html, body {
 .form-body-field {
   width: 100%;
   height: 25rem;
+  border: 1px solid #232323;
 }
 
 .logout {
@@ -100,5 +106,12 @@ desktop
   .col-offset-9 {margin-left: 75%}
   .col-offset-10 {margin-left: 83.33%}
   .col-offset-11 {margin-left: 91.66%}
+
+  .nav-tab {
+    background: #fff;
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: #000;
+  }
 }
 
