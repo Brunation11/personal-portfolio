@@ -6,7 +6,7 @@ class Post < ActiveRecord::Base
   validates :title, :body, presence: true
 
   def tags
-    self.tag_string.split("/").each{|x| x.capitalize }
+    self.tag_string.split("/").each{|x| x.upcase }
   end
 
   def formatted_body

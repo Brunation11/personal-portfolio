@@ -64,8 +64,9 @@ default
 
 .button {
   background: none;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   border-radius: 5px;
   font-size: 1rem;
-  padding-top: 0;
+  padding: .5rem 1rem;
+  margin: .5rem;
 }

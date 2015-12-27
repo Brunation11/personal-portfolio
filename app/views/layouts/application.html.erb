@@ -35,8 +35,8 @@
       <%= yield %>
 
     <% if logged_in? %>
-      <div class="col-12 center">
-        <%= link_to 'logout', logout_path, method: "delete" %>
+      <div class="logout col-12 center">
+        <%= link_to 'Logout', logout_path, method: "delete", class: "button link" %>
       </div>
     <% end %>
   </body>

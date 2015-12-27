@@ -60,6 +60,9 @@ html, body {
   height: 25rem;
 }
 
+.logout {
+  margin: 2rem 0;
+}
 /********************
 desktop
 ********************/

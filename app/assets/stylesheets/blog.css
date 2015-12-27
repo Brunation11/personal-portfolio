@@ -24,3 +24,8 @@
 .post-date-day {
   font-size: 2.5rem;
 }
+
+.post-body {
+  line-height: 1.25rem;
+  text-indent: 1rem;
+}
