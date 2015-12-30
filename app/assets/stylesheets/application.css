@@ -69,6 +69,10 @@ html, body {
 .logout {
   margin: 2rem 0;
 }
+
+.test {
+  color: red;
+}
 /********************
 desktop
 ********************/

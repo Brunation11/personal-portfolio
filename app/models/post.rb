@@ -9,8 +9,8 @@ class Post < ActiveRecord::Base
     self.tag_string.split("/").each{|x| x.upcase }
   end
 
-  def formatted_body
-    self.body.split("\\n")
+  def preview_body
+    self.body.split("\r\n\r\n")[0]
   end
 
 end

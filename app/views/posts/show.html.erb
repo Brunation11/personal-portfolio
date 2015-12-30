@@ -16,9 +16,8 @@
         <% end %>
       </ul>
 
-      <% @post.formatted_body.each do |paragraph| %>
-        <p class="post-body"><%= paragraph %></p>
-      <% end %>
+      <%= markdown(@post.body) %>
+
 
     </div>
 

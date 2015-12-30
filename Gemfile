@@ -29,6 +29,10 @@ gem 'bcrypt', '~> 3.1.7'
 #css framework
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'sprockets-rails'
+
+#syntax highlighting
+gem 'redcarpet'
+gem 'coderay'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
