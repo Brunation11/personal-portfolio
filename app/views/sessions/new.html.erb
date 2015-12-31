@@ -1,15 +1,17 @@
-<div class="main-content login-form col-4 col-offset-4 center">
-  <%= form_for :session, url: admin_login_path do |f| %>
-      <p>
-        <%= f.label :username %>
-        <%= f.text_field :username %>
-      </p>
-      <p>
-        <%= f.label :password %>
-        <%= f.password_field :password %>
-      </p>
-      <p>
-        <%= submit_tag("Login", class: "button") %>
-      </p>
-  <% end %>
+<div class="static-width">
+  <div class="main-content login-form col-4 col-offset-4 center">
+    <%= form_for :session, url: admin_login_path do |f| %>
+        <p>
+          <%= f.label :username %>
+          <%= f.text_field :username %>
+        </p>
+        <p>
+          <%= f.label :password %>
+          <%= f.password_field :password %>
+        </p>
+        <p>
+          <%= submit_tag("Login", class: "button") %>
+        </p>
+    <% end %>
+  </div>
 </div>
