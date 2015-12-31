@@ -35,16 +35,16 @@ $(document).ready(function(){
     }, 600);
   });
 
-  // $(window).bind('scroll', function () {
-  //   if ($(window).scrollTop() > $('.main-header').height()) {
-  //       $('#main-header').addClass('col-8 col-offset-2');
-  //       $('.main-header').css('position', 'fixed');
-  //       $('.main-header').hide().fadeIn(200);
-  //   } else {
-  //       $('#main-header').removeClass('col-8 col-offset-2');
-  //       $('.main-header').css('position', 'absolute');
-  //   }
-  // });
+  $(window).bind('scroll', function () {
+    if ($(window).scrollTop() > $('.main-header').height()) {
+        $('#main-header').addClass('col-8 col-offset-2');
+        $('.main-header').css('position', 'fixed');
+        $('.main-header').hide().fadeIn(200);
+    } else {
+        $('#main-header').removeClass('col-8 col-offset-2');
+        $('.main-header').css('position', 'absolute');
+    }
+  });
 
   $('#new-post').on('click', function(event) {
     event.preventDefault();
