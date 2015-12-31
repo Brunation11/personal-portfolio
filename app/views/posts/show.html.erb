@@ -1,33 +1,35 @@
-<div class="main-content col-12 static-width">
-  <div class="col-8 col-offset-2">
+<div class="main-content col-12">
+  <div class="static-width">
+    <div class="col-8 col-offset-2">
 
-    <div class="post-date center col-1">
-      <p class="no-padding no-margin"><%= @post.created_at.strftime("%b %Y") %></p>
-      <p class="post-date-day no-padding no-margin"><%= @post.created_at.strftime("%d") %></p>
-    </div>
+      <div class="post-date center col-1">
+        <p class="no-padding no-margin"><%= @post.created_at.strftime("%b %Y") %></p>
+        <p class="post-date-day no-padding no-margin"><%= @post.created_at.strftime("%d") %></p>
+      </div>
 
-    <div class="post col-11">
-      <h1 class="post-title no-padding no-margin"><%= @post.title %></h1>
-      <h2 class="post-subtitle no-padding no-margin"><%= @post.subtitle %></h2>
+      <div class="post col-11">
+        <h1 class="post-title no-padding no-margin"><%= @post.title %></h1>
+        <h2 class="post-subtitle no-padding no-margin"><%= @post.subtitle %></h2>
 
-      <ul class="no-list-style no-padding no-margin">
-        <% @post.tags.each do |tag| %>
-          <li class="post-tags no-padding no-margin inline"><%= tag %></li>
+        <ul class="no-list-style no-padding no-margin">
+          <% @post.tags.each do |tag| %>
+            <li class="post-tags no-padding no-margin inline"><%= tag %></li>
+          <% end %>
+        </ul>
+
+        <%= markdown(@post.body) %>
+
+
+      </div>
+
+      <ul class="center no-list-style">
+        <% if logged_in? %>
+          <li class="inline"><%= link_to 'Edit', edit_post_path(@post), class: "link button" %></li>
+          <li class="inline"><%= link_to 'Delete', post_path(@post), method: "delete", class: "link button" %></li>
         <% end %>
+        <li class="inline"><%= link_to 'Back', posts_path, class: "link button" %></li>
       </ul>
 
-      <%= markdown(@post.body) %>
-
-
     </div>
-
-    <ul class="center no-list-style">
-      <% if logged_in? %>
-        <li class="inline"><%= link_to 'Edit', edit_post_path(@post), class: "link button" %></li>
-        <li class="inline"><%= link_to 'Delete', post_path(@post), method: "delete", class: "link button" %></li>
-      <% end %>
-      <li class="inline"><%= link_to 'Back', posts_path, class: "link button" %></li>
-    </ul>
-
   </div>
 </div>
