@@ -1,4 +1,4 @@
-<div id="post-index" class="main-content col-12">
+<div id="post-index" class="main-content col-12 static-width">
   <div class="col-10 col-offset-1">
     <% @posts.each do |post| %>
       <%= render partial: "post_preview", locals: {post: post} %>
