@@ -64,7 +64,7 @@ default
 
 .static-width {
   margin: auto;
-  /*max-width: 1300px;*/
+  max-width: 1300px;
 }
 
 .button {
