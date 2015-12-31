@@ -11,9 +11,8 @@
 
 .jumbotron-container {
   background-image: url("/assets/jumbotron.gif");
-  background-size: 100% auto;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 1000px;
   opacity: .9;
 }
 
