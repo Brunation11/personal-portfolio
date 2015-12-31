@@ -10,12 +10,12 @@
 }
 
 .jumbotron-container {
-  /*background-image: url("/assets/jumbotron.gif");*/
+  background-image: url("/assets/jumbotron.gif");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: .9;
 }
 
-.jumbotron-header-div {
+./*jumbotron-header-div {
   margin-top: 150px;
-}
+}*/
