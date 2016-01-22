@@ -4,6 +4,11 @@
   line-height: 150%;
 }
 
+.bio-banner {
+  font-size: 1.05rem;
+  line-height: 150%;
+}
+
 .about-container {
   border-top: 1px solid #232323;
 }
