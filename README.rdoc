@@ -1,28 +1,33 @@
-== README
+== 13
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+13 is meant to be a study of technologies and UX design as well as my personal website and blog. This project is in constant construction so be patient if a particular feature isn't working as expected.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Current technologies:
+
+* Rails 4
+
+* HTML5
+
+* CSS3(Vanilla CSS(no framework utilized))
+
+* JavaScript
+
+* PostgreSQL
+
+* Full markdown and syntax highlighting support(admin)
+
+* Deployed on Heroku
+
+
+In progress:
+
+* Angular
+
+* Firebase
+
+* File upload support
+
+* ElasticSearch Java server(search blog/projects)
+
+* Boostrap
