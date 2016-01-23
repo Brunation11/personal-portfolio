@@ -2,6 +2,7 @@
 
 13 is meant to be a study of technologies and UX design as well as my personal website and blog. This project is in constant construction so be patient if a particular feature isn't working as expected.
 
+[brunozatta.com](brunozatta.com)
 
 Current technologies:
 
