@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   attr_accessor :password_confirmation
 
   has_many :posts
+  has_many :projects
 
   validates :username, :password_digest, presence: true
   validates_confirmation_of :password, :confirm => :password_confirmation
