@@ -1,0 +1,30 @@
+<%= form_for @project do |f| %>
+
+  <% if @project.errors.any? %>
+    <h2 class="center"><%= pluralize(@project.errors.count, 'error') %> prohibited this project from being saved:
+    </h2>
+    <ul class="center no-list-style">
+      <% @project.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <p><%= f.label :name %></p>
+  <p><%= f.text_area :name, class: "form-field" %></p>
+
+  <p><%= f.label :link %></p>
+  <p><%= f.text_area :link, class: "form-field" %></p>
+
+  <p><%= f.label :technologies %></p>
+  <p><%= f.text_area :technologies, class: "form-field" %></p>
+
+  <p><%= f.label :description %></p>
+  <p><%= f.text_area :description, class: "form-body-field" %></p>
+
+  <p><%= f.label :future_plans %></p>
+  <p><%= f.text_area :future_plans, class: "form-body-field" %></p>
+
+  <p class="center"><%= submit_tag("Submit", class: "button") %></p>
+
+<% end %>

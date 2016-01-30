@@ -1,0 +1,28 @@
+<div class="project-card-container col-4">
+  <div class="project-card col-10 col-offset-1">
+    <div class="project-card-image-container">
+      <% project.gallery_images.each do |image| %>
+        <%= link_to (image_tag "#{project.thumbnail}", class: "project-card-image"), "#{image}", rel: "lightbox-#{project.name}", title: '<p class="project-description">' + "#{markdown(project.description)}" + '</p>' %>
+      <% end %>
+    </div>
+
+    <div class="project-card-meta">
+      <p class="project-meta-name"><%= link_to project.name, project.link, class: "project-link" %></p>
+      <div class="project-meta-description">
+        <p class="project-technologies"><%= project.technologies %></p>
+      </div>
+    </div>
+
+    <div class="project-stats">
+
+    </div>
+  </div>
+
+  <% if logged_in? %>
+    <ul class="center no-list-style project-nav">
+      <li class="inline"><%= link_to 'Edit', edit_project_path(project), class: "link project-nav" %></li>
+      |
+      <li class="inline"><%= link_to 'Delete', project_path(project), method: "delete", class: "link project-nav" %></li>
+    </ul>
+  <% end %>
+</div>
