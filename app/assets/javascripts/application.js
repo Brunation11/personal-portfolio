@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require slimbox2.min
 //= require_tree .
 
 $(document).ready(function(){
