@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require slimbox2
  *= require_tree .
  *= require_self
  */
@@ -52,7 +53,7 @@ html, body {
 }
 
 .main-content {
-  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .form-field {
