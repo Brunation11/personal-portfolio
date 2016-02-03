@@ -31,4 +31,4 @@ In progress:
 
 * ElasticSearch Java server(search blog/projects)
 
-* Boostrap
+* Bootstrap
