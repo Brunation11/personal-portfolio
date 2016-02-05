@@ -4,7 +4,7 @@ class Project < ActiveRecord::Base
   validates_presence_of :user, :name, :description, :technologies
 
   def gallery_images
-    images = Dir.glob("app/assets/images/#{name.downcase}/gallery/*.png")
+    images = Dir.glob("app/assets/images/#{name.downcase.split(" ").join("_")}/gallery/*.png")
     images.map {|image| "/assets/#{name.downcase}/gallery/#{image.split('/').last}" }
   end
 
