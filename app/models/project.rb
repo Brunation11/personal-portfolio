@@ -9,6 +9,6 @@ class Project < ActiveRecord::Base
   end
 
   def thumbnail
-    "/assets/#{name.downcase}/thumbnail.png"
+    "/assets/#{name.downcase.split(" ").join("_")}/thumbnail.png"
   end
 end
