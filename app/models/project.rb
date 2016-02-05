@@ -5,7 +5,7 @@ class Project < ActiveRecord::Base
 
   def gallery_images
     images = Dir.glob("app/assets/images/#{name.downcase.split(" ").join("_")}/gallery/*.png")
-    images.map {|image| "/assets/#{name.downcase}/gallery/#{image.split('/').last}" }
+    images.map {|image| "/assets/#{name.downcase.split(" ").join("_")}/gallery/#{image.split('/').last}" }
   end
 
   def thumbnail
