@@ -51,6 +51,7 @@
 .project-meta-description {
   height: 58%;
   margin: .25rem 0;
+  overflow: scroll;
 }
 
 .project-stats {
